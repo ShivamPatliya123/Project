@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white; 
+}
+.left{
+    width: 25vw;
+    padding: 15px;
+}
+.right{
+    width: 75vw;
+}
+.home{
+    padding: 20px;
+}
+
+.home ul li{
+    display: flex;
+    gap: 15px;
+    width: 20px;
+    list-style: none;
+    padding: 14px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+.heading{
+    gap: 15px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.heading img{
+    width: 25px;
+}
+.library{
+    min-height: 60vh;
+    position: relative;
+
+}
+.sec{
+    margin: 22px;
+    border: 2px solid #836d6d;
+    padding: 10px;
+    text-align: center;
+    border-radius: 12px;
+}
+.footer{
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    font-size: 14px;
+    gap: 13px;
+    flex-wrap: wrap;
+    margin: 20px 7px;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+.right{
+    margin: 0px 6px 0px -15px;
+}
+.nav{
+    display: flex;
+    width: 17px;
+    gap: 10px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(43, 41, 41);
+    position: fixed;
+    width: 910px;
+}
+.header >*{
+    padding: 20px;
+}
+.header .buttons{
+    padding: 20px;
+}
+.playlist{
+    padding: 20px 15px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 45px;
+}
+.CardContainer{
+    /* flex-direction: column; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.CardContainer img{
+    padding: 15px;
+    width: 190px;
+    height: 200px;
+    border-radius: 18%;
+}
+.playlist1{
+    padding: 20px 15px;
+    font-size: 15px;
+    
+}
+.CardContainer1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.CardContainer1 img{
+    padding: 15px;
+    width: 190px;
+    height: 200px;
+    border-radius: 50%;
+}
+.playlist2{
+    padding: 20px 15px;
+    font-size: 13px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.CardContainer2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.CardContainer2 img{
+    padding: 15px;
+    width: 190px;
+    height: 200px;
+    /* border-radius: 15%; */
+}
+@media screen and (max-width: 800px){
+    .header{
+        width: 410px;
+    }
+    .CardContainer{
+        /* flex-direction: column; */
+        display: flex;
+        /* grid-template-columns: 1fr 1fr; */
+        flex-wrap: wrap;   
+    }
+    .CardContainer img{
+        width: 150px;
+        height: 160px;  
+    }
+    .CardContainer1{
+        /* flex-direction: column; */
+        display: flex;
+        /* grid-template-columns: 1fr 1fr; */
+        flex-wrap: wrap;   
+    }
+    .CardContainer1 img{
+        width: 140px;
+        height: 150px;  
+    }
+    .CardContainer2{
+        /* flex-direction: column; */
+        display: flex;
+        /* grid-template-columns: 1fr 1fr; */
+        flex-wrap: wrap;   
+    }
+    .CardContainer2 img{
+        width: 140px;
+        height: 150px;  
+    }
+    .playlist1{
+        font-size: 10px;
+    }
+
+}
+@media screen and (max-width: 500px){
+    .header{
+        width: 300px;
+    }
+    .CardContainer img{
+        width: 100px;
+        height: 100px;
+    }
+    .playlist{
+        font-size: 10px;
+    }
+    .CardContainer1 img{
+        width: 100px;
+        height: inherit;
+    }
+    .playlist1{
+        font-size: 8px;
+    }
+    .CardContainer2 img{
+        width: 100px;
+        height: inherit;
+    }
+    .playlist2{
+        font-size: 8px;
+    }
+    .footer{
+        position: absolute;
+        font-size: 13px;
+        flex-wrap: wrap;
+        margin: 20px 0px;
+    }
+    .heading img{
+        width: 15px;
+    }
+    .heading{
+        gap: 11px;
+        
+    }
+    
+}
